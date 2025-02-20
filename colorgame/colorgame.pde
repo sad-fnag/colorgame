@@ -1,6 +1,9 @@
 
 PImage[] gif;
 int nof;
+int f;
+
+int counter;
 
 int mode;
 
@@ -14,8 +17,6 @@ void setup(){
   mode = intro;
   textAlign(CENTER, CENTER);
   
-  nof = 12;
-  gif = new PImage[nof];
   
 }
 
