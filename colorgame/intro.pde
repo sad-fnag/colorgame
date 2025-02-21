@@ -19,7 +19,7 @@ void intro(){
   
   // mouse controls =============================================================
 
-  if( mouseX > 352 && mouseX < 400 && mouseY > 500 && mouseY < 550){
+  if( mouseX > 352 && mouseX < 452 && mouseY > 500 && mouseY < 550){
    fill(#DBD6FF);
   }else{
   fill(255);
@@ -28,17 +28,19 @@ void intro(){
  
 fill(0);
 textSize(50);
-text("--→", 405, 520);
+text("-->", 405, 525);
 
+//=========================================================================================
+
+  textFont(cakecafe);
 textSize(100);
-text("Color Game", 400, 400);
-
+text("Color Game", 400, 370);
 
 }
 
 
 void introclicks(){
-if( mouseX > 352 && mouseX < 400 && mouseY > 500 && mouseY < 550){
+if( mouseX > 352 && mouseX < 452 && mouseY > 500 && mouseY < 550){
    mode = game;
   }
 }
