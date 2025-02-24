@@ -1,7 +1,8 @@
+
 PFont cakecafe;
 
-int randword =(int) random(0, 6);
-int randcolor =(int) random(0, 6);
+int randomword =(int) random(0, 6);
+int randomcolor =(int) random(0, 6);
 
 
 color r = #E8050C;
@@ -13,7 +14,6 @@ color p = #8003FF;
 color bl = #030D31;
 
 
-
 String[] words = {"red", "orange", "yellow", "green", "blue", "purple", "black"};
 color[] colors = {r, or, ye, g, b, p, bl};
 
@@ -21,8 +21,11 @@ PImage[] gif;
 int nof;
 int f;
 
-int counter;
+int move;
 
+int score;
+
+int counter;
 int mode;
 
 final int intro = 0;
@@ -35,6 +38,8 @@ void setup(){
   mode = intro;
   textAlign(CENTER, CENTER);
   counter = 0;
+  score = 0;
+  move = -200;
   cakecafe = createFont("Cakecafe.ttf", 100);
 }
 
